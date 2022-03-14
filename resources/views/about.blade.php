@@ -1,6 +1,8 @@
 @extends('layouts.main')
 @section('content')
-<div>
-    This is about Page
-</div>
+
+    <div>
+        This is about page
+    </div>
+
 @endsection

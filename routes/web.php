@@ -19,16 +19,16 @@ Route::get('/', function () {
 
 
 Route::get('/posts','PostController@index')->name('post.index');
-Route::get('/create','PostController@create');
-Route::get('/update','PostController@update');
-Route::get('/delete','PostController@delete');
-
-
-
+//Route::get('/create','PostController@create');
+//Route::get('/update','PostController@update');
+//Route::get('/delete','PostController@delete');
+//
+//
+//
 Route::get('/main','MainController@index')->name('main.index');
-Route::get('/contacts','ContactsController@index')->name('contact.index');
+Route::get('/contacts','ContactController@index')->name('contact.index');
 Route::get('/about','AboutController@index')->name('about.index');
 
-//Auth::routes();
-//
-//Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
